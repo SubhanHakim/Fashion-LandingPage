@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital@1&display=swap");
+/* css Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+/* Styling */
+
+body {
+  font-family: "Lato", serif;
+}
+
+.container {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+:root {
+  --text: #1b2430;
+}
+
+/* Navbar */
+.navbar {
+  margin: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+  align-self: center;
+}
+
+.navbar .brand .logo {
+  font-family: "Playfair Display";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 2%;
+  text-transform: uppercase;
+  color: var(--text);
+}
+
+.navbar .nav-link a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 18px;
+  color: black;
+  margin: 0 50px;
+}
+
+.navbar .btn-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar .btn-nav .btn {
+  margin-left: 40px;
+}
+
+.navbar .btn-nav .btn .btn-secondary {
+  border: none;
+  background-color: transparent;
+  font-size: 18px;
+  font-weight: 600;
+  margin-right: 40px;
+  color: var(--text);
+}
+
+.navbar .btn-nav .btn .btn-primary {
+  padding: 17px 30px;
+  background-color: white;
+  border: 1px solid #1b2430;
+  border-radius: 5px;
+}
