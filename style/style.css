@@ -83,6 +83,11 @@ a {
   background-color: white;
   border: 1px solid #1b2430;
   border-radius: 5px;
+  transition: 0.5s;
+}
+.btn-primary:hover {
+  background-color: var(--text);
+  color: #fff;
 }
 .bar {
   display: block;
@@ -94,13 +99,94 @@ a {
   background-color: #101010;
 }
 
+/* hero section */
+#hero {
+  padding-top: 100px;
+  height: 100vh;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading .m-heading {
+  margin-top: 1.875rem;
+}
+
+.heading h1 {
+  width: 691px;
+  font-family: "Playfair Display", serif;
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--text);
+  text-transform: uppercase;
+  overflow: hidden;
+  border-right: 0.1em solid var(--text);
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 691px;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: var(--text);
+  }
+}
+
+.heading p {
+  width: 515px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 130%;
+  text-align: center;
+  color: var(--text);
+}
+
+.circle {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: var(--text);
+  border-radius: 50px;
+  text-align: center;
+  margin-left: 2.1875rem;
+}
+.circle img {
+  margin: 15px 0;
+  margin-left: 5px;
+}
+.btn-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Mobile Version Responsive */
 
 @media only screen and (max-width: 992px) {
   .nav-menu {
     position: fixed;
     left: -100%;
-    top: 5rem;
+    top: 3.5rem;
     flex-direction: column;
     background-color: #fff;
     width: 100%;
@@ -115,7 +201,7 @@ a {
   }
 
   .nav-item {
-    margin: 2.5rem 0;
+    margin: 1.5rem 0;
   }
 
   .hamburger {
