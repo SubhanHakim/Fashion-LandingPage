@@ -9,24 +9,35 @@
   </head>
   <body>
     <div class="container">
-      <div class="navbar">
-        <div class="brand">
-          <h1 class="logo">Suit now</h1>
-        </div>
-        <div class="nav-link">
-          <a href="/">Home</a>
-          <a href="/">Trending</a>
-          <a href="/">Category</a>
-          <a href="/">About Us</a>
-        </div>
-        <div class="btn-nav">
-          <img src="/img/shopping-bag.svg" alt="" />
-          <div class="btn">
+      <nav class="navbar">
+        <a href="#" class="nav-logo">SUIT-NOW</a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="home" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Trending</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Category</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">About Us</a>
+          </li>
+          <img src="/img/shopping-bag.svg" alt="" class="nav-item" />
+          <div class="btn nav-item">
             <button class="btn-secondary">Login</button>
             <button class="btn-primary">Sign Up</button>
           </div>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
-      </div>
+      </nav>
     </div>
+
+    <script src="/script/main.js"></script>
   </body>
 </html>
